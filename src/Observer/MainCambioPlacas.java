@@ -1,6 +1,10 @@
+package Observer;
+
+import Observer.ObservadorPlacas;
+
 import java.util.Scanner;
 
-public class Patron {
+public class MainCambioPlacas {
     public static void main(String[] args) {
         int[] placaNueva = new int[2];
         Sujeto placas = new Sujeto();
@@ -10,7 +14,7 @@ public class Patron {
         System.out.println("Las restricciones de ayer son "+ restriccionHoy[0]+","+restriccionHoy[1]);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingrese los dos numeros seguidos de las restricciones ejp'12'para 1,2");
+        System.out.println("Ingrese los dos numeros seguidos de las restricciones ejp'12' para 1,2");
         String nuevasRestriciones = scanner.nextLine();
 
 

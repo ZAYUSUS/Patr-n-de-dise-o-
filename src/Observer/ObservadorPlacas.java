@@ -1,4 +1,8 @@
-public class ObservadorPlacas extends Observador{//crea el observador para ver los cambios en las restricciones
+package Observer;
+
+import Observer.Observador;
+
+public class ObservadorPlacas extends Observador {//crea el observador para ver los cambios en las restricciones
     int[] nuevas;// array para guardar los numeros de las placas
 
     public ObservadorPlacas(Sujeto sujeto){
