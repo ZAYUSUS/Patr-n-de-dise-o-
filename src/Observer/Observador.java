@@ -1,3 +1,5 @@
+package Observer;
+
 public abstract class Observador {
     protected Sujeto sujeto;
 

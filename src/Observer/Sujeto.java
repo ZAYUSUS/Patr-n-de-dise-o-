@@ -1,3 +1,7 @@
+package Observer;
+
+import Observer.Observador;
+
 import java.util.ArrayList;
 import java.util.List;
 
