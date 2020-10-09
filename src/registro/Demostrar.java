@@ -10,10 +10,9 @@ import registro.Verificar;
  */
 public class Demostrar {
     
-    public void MostrarDatos(Registro num_placa, Registro auto_marca, Registro auto_modelo) {
-        System.out.println("Su nÃºmero de placa es"+ num_placa);
-        System.out.println("Su marca es:" + auto_marca);
-        System.out.println("Su modelo es:"+ auto_modelo);
+    public void MostrarDatos(Registro correo_electronico, Registro contraseña) {
+        System.out.println("Su correo registrado es:"+ correo_electronico);
+        System.out.println("Su contraseña es:" + contraseña);
     }   
     
 }

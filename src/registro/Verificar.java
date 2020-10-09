@@ -4,9 +4,10 @@ package registro;
 
 public abstract class Verificar {
     
-    protected Registro num_placa;
-    protected Registro auto_modelo;
-    protected Registro auto_marca;
+    protected Registro num_cedula;
+    protected Registro num_celular;
+    protected Registro correo_electronico;
+    protected Registro contraseña;
 
     public abstract void MostrarDatos();
 }
