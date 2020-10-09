@@ -14,13 +14,19 @@ public class MainCambioPlacas {
         System.out.println("Las restricciones de ayer son "+ restriccionHoy[0]+","+restriccionHoy[1]);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingrese los dos numeros seguidos de las restricciones ejp'12' para 1,2");
+        System.out.println("Ingrese los numeros de las restricciones son dos y van separados por coma ejp: 1,2");
         String nuevasRestriciones = scanner.nextLine();
 
+        int i2= 0;
 
-        for (int i=0; i<2;i++){//recorre el input que se le dá en consola
-            String nuevo =  nuevasRestriciones.substring(i,i+1);
-            placaNueva[i] = Integer.parseInt(nuevo);
+        for (int i=0; i<3;i++) {//recorre el input que se le dá en consola
+            String nuevo = nuevasRestriciones.substring(i, i + 1);
+            if (nuevo.contains(",")) {
+                System.out.println("");
+            } else {
+                placaNueva[i2] = Integer.parseInt(nuevo);
+                i2++;
+            }
         }
         placas.setEstado(placaNueva);
     }
